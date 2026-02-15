@@ -1,0 +1,2 @@
+- submit.py 提交结果到我们的测试接口
+- run_sample_eval.py 在3个相册公开的20条query上测试结果（不一定有必要）

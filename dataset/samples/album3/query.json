@@ -1,0 +1,357 @@
+[
+  {
+    "query_cn": "银色心形手镯",
+    "query_en": "silver heart-shaped bracelet",
+    "ground_truth": [
+      "IMG_3726.JPG"
+    ],
+    "ground_truth_count": 1,
+    "Location": null,
+    "Time": null,
+    "Person": null,
+    "Object": "fact",
+    "Concept": null,
+    "Genre": null,
+    "Source": "V"
+  },
+  {
+    "query_cn": "闵行区拍的",
+    "query_en": "Minhang District pics",
+    "ground_truth": [
+      "IMG_20220624_151900.jpg",
+      "IMG_20220716_141621.jpg",
+      "IMG_20220716_141625.jpg",
+      "IMG_20220624_134949.jpg",
+      "IMG_20220624_151905.jpg",
+      "IMG_20220624_152213.jpg"
+    ],
+    "ground_truth_count": 6,
+    "Location": "cognitive",
+    "Time": null,
+    "Person": null,
+    "Object": null,
+    "Concept": null,
+    "Genre": null,
+    "Source": "M"
+  },
+  {
+    "query_cn": "2022年劳动节拍的",
+    "query_en": "2022 Labor Day",
+    "ground_truth": [
+      "IMG_20220502_224357.jpg",
+      "IMG_20220502_163720.jpg"
+    ],
+    "ground_truth_count": 2,
+    "Location": null,
+    "Time": "cognitive",
+    "Person": null,
+    "Object": null,
+    "Concept": null,
+    "Genre": null,
+    "Source": "M"
+  },
+  {
+    "query_cn": "烘焙面糊搅拌过程",
+    "query_en": "mixing baking batter",
+    "ground_truth": [
+      "IMG_0143.JPG",
+      "IMG_7633.JPG",
+      "IMG_9913.JPG"
+    ],
+    "ground_truth_count": 3,
+    "Location": null,
+    "Time": null,
+    "Person": null,
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "V"
+  },
+  {
+    "query_cn": "小明、张晓莉、乐乐、爸爸的照片",
+    "query_en": "Xiaoming, Zhang Xiaoli, Lele, dad photos",
+    "ground_truth": [
+      "2018-12-30 150610.jpg"
+    ],
+    "ground_truth_count": 1,
+    "Location": null,
+    "Time": null,
+    "Person": "cognitive",
+    "Object": null,
+    "Concept": null,
+    "Genre": null,
+    "Source": "F"
+  },
+  {
+    "query_cn": "在曼谷拍的 和老婆做泰国当地的水灯",
+    "query_en": "Bangkok with wife making Thai lanterns",
+    "ground_truth": [],
+    "ground_truth_count": 0,
+    "Location": "fact",
+    "Time": null,
+    "Person": "cognitive",
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "VMF"
+  },
+  {
+    "query_cn": "给宝宝喂药 用滴管",
+    "query_en": "baby medicine dropper feeding",
+    "ground_truth": [],
+    "ground_truth_count": 0,
+    "Location": null,
+    "Time": null,
+    "Person": "cognitive",
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "VF"
+  },
+  {
+    "query_cn": "厚切炒酸奶扫码购买",
+    "query_en": "scan QR to buy thick-cut frozen yogurt",
+    "ground_truth": [
+      "IMG_20220624_151905.jpg",
+      "IMG_20220730_164002.jpg",
+      "IMG_20220730_181336.jpg"
+    ],
+    "ground_truth_count": 3,
+    "Location": null,
+    "Time": null,
+    "Person": null,
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "VM"
+  },
+  {
+    "query_cn": "2018葆婴高峰会嘟嘟车宣传",
+    "query_en": "2018 baby care summit tuk-tuk promo",
+    "ground_truth": [
+      "2018-04-01 170511.jpg"
+    ],
+    "ground_truth_count": 1,
+    "Location": null,
+    "Time": "fact",
+    "Person": null,
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "MF"
+  },
+  {
+    "query_cn": "春天花开",
+    "query_en": "spring flowers blooming",
+    "ground_truth": [
+      "2019-01-01 164619.jpg",
+      "2019-04-06 094645.jpg",
+      "IMG_0085.JPG",
+      "IMG_0191.JPG",
+      "IMG_0542.JPG",
+      "IMG_0548.JPG",
+      "IMG_0555.JPG",
+      "IMG_0556.JPG",
+      "IMG_7658.JPG"
+    ],
+    "ground_truth_count": 9,
+    "Location": null,
+    "Time": "fact",
+    "Person": null,
+    "Object": null,
+    "Concept": "cognitive",
+    "Genre": null,
+    "Source": "V"
+  },
+  {
+    "query_cn": "确认车钥匙细节",
+    "query_en": "checking car key details",
+    "ground_truth": [
+      "2018-06-28 121602.jpg",
+      "IMG_20230404_080916.jpg",
+      "IMG_20230523_101625.jpg"
+    ],
+    "ground_truth_count": 3,
+    "Location": null,
+    "Time": null,
+    "Person": null,
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "V"
+  },
+  {
+    "query_cn": "燕园",
+    "query_en": "Yanyuan pics",
+    "ground_truth": [
+      "2018-04-15 073828.jpg"
+    ],
+    "ground_truth_count": 1,
+    "Location": "fact",
+    "Time": null,
+    "Person": null,
+    "Object": null,
+    "Concept": null,
+    "Genre": null,
+    "Source": "M"
+  },
+  {
+    "query_cn": "清迈森林骑象的照片 装裱起来的",
+    "query_en": "framed photo of elephant ride in Chiang Mai forest",
+    "ground_truth": [
+      "2018-04-02 135737.jpg",
+      "2019-03-03 172004.jpg"
+    ],
+    "ground_truth_count": 2,
+    "Location": "cognitive",
+    "Time": null,
+    "Person": null,
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "V"
+  },
+  {
+    "query_cn": "餐厅卤味食材展示",
+    "query_en": "restaurant marinated food display",
+    "ground_truth": [
+      "IMG_20220801_092909.jpg",
+      "IMG_20220801_092920.jpg",
+      "IMG_7333.JPG"
+    ],
+    "ground_truth_count": 3,
+    "Location": "cognitive",
+    "Time": null,
+    "Person": null,
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "V"
+  },
+  {
+    "query_cn": "氹仔酒店楼道",
+    "query_en": "Taipa hotel hallway",
+    "ground_truth": [
+      "IMG_4790.JPG"
+    ],
+    "ground_truth_count": 1,
+    "Location": "cognitive",
+    "Time": null,
+    "Person": null,
+    "Object": null,
+    "Concept": null,
+    "Genre": null,
+    "Source": "VM"
+  },
+  {
+    "query_cn": "有大宝和妈在一起的照片",
+    "query_en": "photos of Da Bao with mom",
+    "ground_truth": [
+      "2018-12-30 143413.jpg",
+      "2018-12-30 134521.jpg",
+      "2018-12-30 150610.jpg",
+      "2018-12-31 132012.jpg",
+      "2018-12-30 135510.jpg",
+      "2018-12-30 134508.jpg",
+      "2018-12-30 135456.jpg",
+      "2018-12-30 134633.jpg",
+      "2018-12-30 150414.jpg"
+    ],
+    "ground_truth_count": 9,
+    "Location": null,
+    "Time": null,
+    "Person": "cognitive",
+    "Object": null,
+    "Concept": null,
+    "Genre": null,
+    "Source": "F"
+  },
+  {
+    "query_cn": "乘客与幼鹿近距离接触",
+    "query_en": "passengers interacting with fawn",
+    "ground_truth": [
+      "2018-04-01 200541.jpg",
+      "2018-04-01 201022.jpg",
+      "2018-04-01 201025.jpg"
+    ],
+    "ground_truth_count": 3,
+    "Location": null,
+    "Time": null,
+    "Person": "cognitive",
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "V"
+  },
+  {
+    "query_cn": "采摘番茄",
+    "query_en": "picking tomatoes",
+    "ground_truth": [
+      "IMG_0517.JPG",
+      "IMG_0520.JPG"
+    ],
+    "ground_truth_count": 2,
+    "Location": null,
+    "Time": null,
+    "Person": null,
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "VM"
+  },
+  {
+    "query_cn": "水族馆海豚跃出水面",
+    "query_en": "aquarium dolphin jumping out of water",
+    "ground_truth": [],
+    "ground_truth_count": 0,
+    "Location": "cognitive",
+    "Time": null,
+    "Person": null,
+    "Object": "cognitive",
+    "Concept": null,
+    "Genre": null,
+    "Source": "V"
+  },
+  {
+    "query_cn": "在夷陵区的照片",
+    "query_en": "photos in Yiling District",
+    "ground_truth": [
+      "2017-11-05 145421.jpg",
+      "2017-11-05 164059.jpg",
+      "2017-11-05 150002.jpg",
+      "2017-11-05 164457.jpg",
+      "2017-11-05 151308.jpg",
+      "2017-11-05 151838.jpg",
+      "2017-11-05 153546.jpg",
+      "2017-11-05 145912.jpg",
+      "2017-11-05 151340.jpg",
+      "2017-11-05 164041.jpg",
+      "2017-11-05 155740.jpg",
+      "2017-11-05 155728.jpg",
+      "2017-11-05 151427.jpg",
+      "2017-11-05 152200.jpg",
+      "2017-11-05 150808.jpg",
+      "2017-11-05 150513.jpg",
+      "2017-11-05 145018.jpg",
+      "2017-11-05 164429.jpg",
+      "2017-11-05 153809.jpg",
+      "2017-11-05 152623.jpg",
+      "2017-11-05 145407.jpg",
+      "2017-11-05 150755.jpg",
+      "2017-11-05 153533.jpg",
+      "2017-11-05 161103.jpg",
+      "2017-11-05 130529.jpg",
+      "2017-11-05 152724.jpg",
+      "2017-11-05 152601.jpg",
+      "2017-11-05 151451.jpg"
+    ],
+    "ground_truth_count": 28,
+    "Location": "fact",
+    "Time": null,
+    "Person": null,
+    "Object": null,
+    "Concept": null,
+    "Genre": null,
+    "Source": "M"
+  }
+]

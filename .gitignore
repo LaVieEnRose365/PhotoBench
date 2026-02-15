@@ -1,0 +1,17 @@
+# Ignore everything by default
+*
+
+# Keep the ignore file itself
+!.gitignore
+
+# Allow root READMEs
+!README.md
+!README_CN.md
+
+# Allow dataset directory and its contents
+!dataset/
+!dataset/**
+
+# Allow scripts directory and its contents
+!scripts/
+!scripts/**
