@@ -1,0 +1,32 @@
+# Ignore everything by default
+*
+
+# Keep the ignore file itself
+!.gitignore
+
+# Allow root READMEs
+!README.md
+!README_CN.md
+
+# Allow dataset directory and its contents
+!dataset/
+!dataset/**
+
+# # Re-ignore images under dataset (common formats)
+# dataset/**/*.[Jj][Pp][Gg]
+# dataset/**/*.[Jj][Pp][Ee][Gg]
+# dataset/**/*.[Pp][Nn][Gg]
+# dataset/**/*.[Ww][Ee][Bb][Pp]
+# dataset/**/*.[Bb][Mm][Pp]
+# dataset/**/*.[Tt][Ii][Ff][Ff]
+# dataset/**/*.[Gg][Ii][Ff]
+# dataset/**/*.[Hh][Ee][Ii][Cc]
+# dataset/**/*.[Hh][Ee][Ii][Ff]
+
+# Allow scripts directory and its contents
+!scripts/
+!scripts/**
+!appendix/
+!appendix/*
+!experiments/
+!experiments/*
