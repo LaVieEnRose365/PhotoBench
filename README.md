@@ -20,7 +20,8 @@ PhotoBench is designed with privacy as a first priority. Instead of providing th
 
 This design allows you to run evaluation scripts locally using these features to generate a submission file.
 
-***The dataset is currently undergoing safety scrutiny by the company, and we will open-source it as soon as it passes the review process.***
+You can get the dataset file from the following link:
+[Link1](https://drive.google.com/drive/folders/1ODJqgbC9Hu_EfP9m4xP31DLb84ZDJqCC?usp=share_link) without password, or [Link2](https://sbox.myoas.com/l/B10d84e1cfa514920) with password: Oppo2026
 
 ## Benchmark Results
 
