@@ -23,6 +23,8 @@ PhotoBench 将隐私保护作为首要设计原则。我们不直接提供完整
 您可以从如下链接获取`dataset`文件：
 [Link1](https://drive.google.com/drive/folders/1ODJqgbC9Hu_EfP9m4xP31DLb84ZDJqCC?usp=share_link) 无需密码，或者是 [Link2](https://sbox.myoas.com/l/B10d84e1cfa514920), 通过密码: Oppo2026
 
+同时，我们的数据集也可以从[Huggingface](https://huggingface.co/datasets/SorrowTea/PhotoBench)上获取。
+
 ## 评测结果
 
 下表总结了各种模型在 PhotoBench 评测基准上的性能。这提供了当前最先进技术的概览以及仍然存在的挑战。
