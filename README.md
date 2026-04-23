@@ -2,7 +2,7 @@
 
 | | | | | | | |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **🏠 GitHub** | [📄 arXiv](https://arxiv.org/abs/2603.01493v1) | [🏅 Leaderboard](https://huggingface.co/spaces/SorrowTea/PhotoBench/) | [📊 Dataset](https://huggingface.co/datasets/SorrowTea/PhotoBench) | [🛡️ Protected LB](https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/) | [📁 Protected Data](https://huggingface.co/datasets/SorrowTea/PhotoBench-Protected) | [🔒 Full Data](https://sbox.myoas.com/l/Be5be4053f6b43840) |
+| **🏠 GitHub** | [📄 arXiv](https://arxiv.org/abs/2603.01493v1) | [🏅 Leaderboard](https://huggingface.co/spaces/SorrowTea/PhotoBench/) | [📦 Dataset](https://huggingface.co/datasets/SorrowTea/PhotoBench) | [🛡️ Protected Leaderboard](https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/) | [📦 Protected Dataset](https://huggingface.co/datasets/SorrowTea/PhotoBench-Protected) | [🖼️ Raw Images](https://sbox.myoas.com/l/Be5be4053f6b43840) |
 
 This is the official repository for PhotoBench, a new benchmark for photo retrieval and reasoning. This repository provides the necessary datasets and tools for researchers to evaluate their models' performance in a realistic photo album scenario.
 
