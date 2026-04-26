@@ -12,6 +12,16 @@
 
 PhotoBench is the first benchmark constructed from authentic, personal albums, designed to shift the paradigm from visual matching to personalized multi-source intent-driven photo retrieval. This repository hosts the datasets, evaluation tools, and leaderboard interfaces.
 
+## 🎉 What's New
+
+- **📦 Full Dataset Release on HuggingFace!**  
+  Building upon our initial Protected release (pre-computed captions, embeddings, and metadata for agent-based research), the **complete raw images** are now openly available—choose your own models, extract your own features, and retrieve without limits!  
+  [→ Full Dataset](https://huggingface.co/datasets/SorrowTea/PhotoBench) · [→ Protected Dataset](https://huggingface.co/datasets/SorrowTea/PhotoBench-Protected)
+
+- **🏅 Online Leaderboards are Live!**  
+  Submit your results and see your model on the leaderboard in real time.  
+  [→ Full Leaderboard](https://huggingface.co/spaces/SorrowTea/PhotoBench/) · [→ Protected Leaderboard](https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/)
+
 ## Dataset Design
 
 To address the limitations of existing datasets, we introduce PhotoBench, which is specifically designed for real-world photo album retrieval and reasoning. The key differences from previous text-to-image benchmarks are summarized below:
@@ -37,14 +47,13 @@ The following table summarizes the performance of various models on the PhotoBen
 
 Once you have generated a submission file by using your own model, you can submit it to our online platform to get the final scores.
 
-**Evaluation Website:** [https://photo-bench-site.vercel.app](https://photo-bench-site.vercel.app)
-or [https://sorrowcloud.tech](https://sorrowcloud.tech)
+**Leaderboard:** [PhotoBench Leaderboard](https://huggingface.co/spaces/SorrowTea/PhotoBench/) · [Protected Leaderboard](https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/)
 
 The process is as follows:
 
 1.  **Generate Submission File**: Run your model to produce a `_submission.json` file.
-2.  **Submit Your File**: Upload the generated JSON file to our evaluation website.
-3.  **Receive Scores**: The evaluation results will be sent to the email address you provide on the website.
+2.  **Submit Your File**: Upload the generated JSON file to the leaderboard.
+3.  **Receive Scores**: The evaluation results will be displayed instantly and sent to the email address you provide.
 
 ### Submission File Format
 

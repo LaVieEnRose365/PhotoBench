@@ -1,6 +1,26 @@
 # PhotoBench (中文)
 
-这里是 PhotoBench 的官方仓库，这是一个为照片检索与推理设计的全新评测基准。本仓库为研究人员提供了必要的数据集和工具，以便在真实的相册场景中评估其模型的性能。
+<p align="center">
+  🏠 <strong>GitHub</strong> ·
+  📄 <a href="https://arxiv.org/abs/2603.01493v1"><strong>arXiv</strong></a> ·
+  🏅 <a href="https://huggingface.co/spaces/SorrowTea/PhotoBench/"><strong>Leaderboard</strong></a> ·
+  📦 <a href="https://huggingface.co/datasets/SorrowTea/PhotoBench"><strong>Dataset</strong></a> ·
+  🏅 <a href="https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/"><strong>Protected Leaderboard</strong></a> ·
+  📦 <a href="https://huggingface.co/datasets/SorrowTea/PhotoBench-Protected"><strong>Protected Dataset</strong></a> ·
+  🖼️ <a href="https://sbox.myoas.com/l/Be5be4053f6b43840"><strong>Raw Images</strong></a>
+</p>
+
+PhotoBench 是从真实个人相册构建的首个评测基准，旨在将范式从视觉匹配转变为个性化多源意图驱动的照片检索。本仓库提供数据集、评测工具与榜单入口。
+
+## 🎉 最新动态
+
+- **📦 完整数据集正式上架 HuggingFace！**
+  从最初仅有 Protected 版（预计算 caption / embedding / 元数据，专注 agent 规划能力），到现在**完整版 RAW 图像全面开放**——你可以自由选择模型、自由提取特征、无拘无束地做检索！
+  [→ 完整数据集](https://huggingface.co/datasets/SorrowTea/PhotoBench) · [→ Protected 数据集](https://huggingface.co/datasets/SorrowTea/PhotoBench-Protected)
+
+- **🏅 在线评测榜单上线！**
+  PhotoBench 全量榜与 Protected 榜正式接入 HuggingFace，支持一键提交、实时排名！
+  [→ 全量榜](https://huggingface.co/spaces/SorrowTea/PhotoBench/) · [→ Protected 榜](https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/)
 
 ## 数据集设计
 
@@ -27,14 +47,13 @@
 
 当您使用自己的模型生成了提交文件后，您可以将其提交到我们的在线平台以获得最终分数。
 
-**评测网址:** [https://photo-bench-site.vercel.app](https://photo-bench-site.vercel.app) 
-**国内访问网址：** [https://sorrowcloud.tech](https://sorrowcloud.tech)
+**评测榜单：** [PhotoBench 全量榜](https://huggingface.co/spaces/SorrowTea/PhotoBench/) · [Protected 榜](https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/)
 
 评测流程如下:
 
 1.  **生成提交文件**: 运行您的模型以产出 `_submission.json` 文件。
-2.  **提交您的文件**: 将生成的 JSON 文件上传到我们的评测网站。
-3.  **接收分数**: 评测结果将会发送到您在网站上提供的邮箱地址。
+2.  **提交您的文件**: 将生成的 JSON 文件上传到榜单。
+3.  **接收分数**: 评测结果将即时展示，并发送到您在网站上提供的邮箱地址。
 
 ### 提交文件格式
 
