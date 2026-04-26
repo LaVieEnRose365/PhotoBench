@@ -34,8 +34,8 @@ You can get the complete dataset directly from our Gitee repository: [https://gi
 
 The dataset includes:
 - **Complete images**: 3 photo albums with all original images
-- **validation.json**: Queries with ground truth are provided to help users conveniently evaluate the performance of their own methods. 100\*3 queries in total.
-- **test.json**: Test queries without ground truth. To evaluate your performance on this split, please submit your results to our test platform: [https://huggingface.co/spaces/SorrowTea/PhotoBench](https://huggingface.co/spaces/SorrowTea/PhotoBench)
+- **validation.json**: Queries with released ground truth for local self-evaluation. 100 queries per album (300 total).
+- **test.json**: Test queries for leaderboard submission. Album 1: 382, Album 2: 236, Album 3: 269 (887 total). Ground truth is held out and evaluated on the [PhotoBench Leaderboard](https://huggingface.co/spaces/SorrowTea/PhotoBench/).
 
 ## Benchmark Results
 
@@ -57,24 +57,51 @@ The process is as follows:
 
 ### Submission File Format
 
-All submissions should adhere to the following file structure:
+The dataset provides one `albumN_test.json` per album. You must **combine all albums into a single JSON array** and add the `album_id` field to each query before submitting.
+
+```python
+import json
+
+submission = []
+for album_id in ["1", "2", "3"]:
+    with open(f"album{album_id}_test.json") as f:
+        queries = json.load(f)
+    for q in queries:
+        submission.append({
+            "album_id": album_id,
+            "query_en": q["query_en"],
+            "pred": ["IMG_0001.JPG", "IMG_0002.JPG", ...]  # your predictions
+        })
+
+with open("submission.json", "w") as f:
+    json.dump(submission, f, indent=2)
+```
+
+**Final submission format:**
 
 ```json
-{
-  "model_name": "<your_model_name>",
-  "language": "cn" or "en",
-  "results": [
-    { "query_id": "<query_id>", "predictions": ["<filename_1>", "<filename_2>", ...] }
-  ]
-}
+[
+  {
+    "album_id": "1",
+    "query_en": "cluttered desk",
+    "pred": ["IMG_1234.jpg", "IMG_5678.jpg", ...]
+  }
+]
 ```
+
+**Required fields:**
+- `album_id`: Album number (`"1"`, `"2"`, or `"3"` — string)
+- `query_en`: The English query text (must match exactly, case-sensitive)
+- `pred`: Ordered list of predicted image filenames (order matters for NDCG)
+
+Only **full submissions** (all 3 albums, all test queries) are eligible for public leaderboard ranking. Partial submissions are accepted for evaluation but will not appear on the leaderboard.
 
 ## Repository Structure
 
 -   `dataset/`: Complete dataset including images and query files.
     -   `album1/`, `album2/`, `album3/`: Complete photo albums.
-    -   `validation.json`: Queries with ground truth. 100\*3 queries in total.
-    -   `test.json`: Test queries.
+    -   `validation.json`: Queries with released ground truth for local self-evaluation. 100 queries per album (300 total).
+    -   `test.json`: Test queries for leaderboard submission. Album 1: 382, Album 2: 236, Album 3: 269 (887 total). Ground truth is held out.
 -   `scripts/`: Evaluation scripts to generate submission files.
     -   `eval_embedding.py`: For embedding-based retrieval.
     -   `eval_caption.py`: For caption-index-based retrieval.

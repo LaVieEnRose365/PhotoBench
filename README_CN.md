@@ -34,8 +34,8 @@ PhotoBench 是从真实个人相册构建的首个评测基准，旨在将范式
 
 数据集包含以下内容：
 - **完整的图片**：3个相册的全部原始图片
-- **train.json**：带有Ground Truth标注的训练查询
-- **test.json**：测试查询（包含带Ground Truth和不带Ground Truth的）
+- **validation.json**：附带已公开 Ground Truth 的验证查询，用于本地自测。每个相册100条，共300条。
+- **test.json**：测试查询，用于榜单提交。相册1: 382条，相册2: 236条，相册3: 269条，共887条。Ground Truth 不公开，由 [PhotoBench 全量榜](https://huggingface.co/spaces/SorrowTea/PhotoBench/) 统一评测。
 
 ## 评测结果
 
@@ -57,24 +57,51 @@ PhotoBench 是从真实个人相册构建的首个评测基准，旨在将范式
 
 ### 提交文件格式
 
-所有提交文件应遵循以下结构：
+数据集为每个相册提供一个 `albumN_test.json`。提交前，你必须**将所有相册合并为一个 JSON 数组**，并为每个查询对象加上 `album_id` 字段。
+
+```python
+import json
+
+submission = []
+for album_id in ["1", "2", "3"]:
+    with open(f"album{album_id}_test.json") as f:
+        queries = json.load(f)
+    for q in queries:
+        submission.append({
+            "album_id": album_id,
+            "query_en": q["query_en"],
+            "pred": ["IMG_0001.JPG", "IMG_0002.JPG", ...]  # 你的预测结果
+        })
+
+with open("submission.json", "w") as f:
+    json.dump(submission, f, indent=2)
+```
+
+**最终提交格式：**
 
 ```json
-{
-  "model_name": "<your_model_name>",
-  "language": "cn" or "en",
-  "results": [
-    { "query_id": "<query_id>", "predictions": ["<filename_1>", "<filename_2>", ...] }
-  ]
-}
+[
+  {
+    "album_id": "1",
+    "query_en": "cluttered desk",
+    "pred": ["IMG_1234.jpg", "IMG_5678.jpg", ...]
+  }
+]
 ```
+
+**必填字段：**
+- `album_id`：相册编号（`"1"`、`"2"` 或 `"3"` —— 字符串）
+- `query_en`：英文查询文本（必须完全匹配，区分大小写）
+- `pred`：预测图片文件名的有序列表（顺序对 NDCG 有影响）
+
+只有**完整提交**（全部 3 个相册、全部测试查询）才有资格进入公开榜单排名。部分提交可以参与评测，但不会出现在榜单上。
 
 ## 仓库结构
 
 -   `dataset/`: 完整的数据集，包括图片和查询文件。
     -   `album1/`, `album2/`, `album3/`: 完整的相册。
-    -   `train.json`: 带有Ground Truth的训练查询。
-    -   `test.json`: 测试查询。
+    -   `validation.json`: 附带已公开 Ground Truth 的验证查询，用于本地自测。每个相册100条，共300条。
+    -   `test.json`: 测试查询，用于榜单提交。相册1: 382条，相册2: 236条，相册3: 269条，共887条。Ground Truth 不公开。
 -   `scripts/`: 用于生成提交文件的评测脚本。
     -   `eval_embedding.py`: 用于基于 Embedding 的检索。
     -   `eval_caption.py`: 用于基于 Caption 索引的检索。
