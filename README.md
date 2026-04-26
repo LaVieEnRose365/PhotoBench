@@ -24,8 +24,8 @@ You can get the complete dataset directly from our Gitee repository: [https://gi
 
 The dataset includes:
 - **Complete images**: 3 photo albums with all original images
-- **train.json**: Training queries with ground truth annotations
-- **test.json**: Test queries (with and without ground truth)
+- **validation.json**: Queries with ground truth are provided to help users conveniently evaluate the performance of their own methods. 100\*3 queries in total.
+- **test.json**: Test queries without ground truth. To evaluate your performance on this split, please submit your results to our test platform: [https://huggingface.co/spaces/SorrowTea/PhotoBench](https://huggingface.co/spaces/SorrowTea/PhotoBench)
 
 ## Benchmark Results
 
@@ -64,7 +64,7 @@ All submissions should adhere to the following file structure:
 
 -   `dataset/`: Complete dataset including images and query files.
     -   `album1/`, `album2/`, `album3/`: Complete photo albums.
-    -   `train.json`: Training queries with ground truth.
+    -   `validation.json`: Queries with ground truth. 100\*3 queries in total.
     -   `test.json`: Test queries.
 -   `scripts/`: Evaluation scripts to generate submission files.
     -   `eval_embedding.py`: For embedding-based retrieval.
