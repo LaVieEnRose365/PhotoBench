@@ -28,6 +28,22 @@ PhotoBench 是从真实个人相册构建的首个评测基准，旨在将范式
 
 ![表1: 与其他数据集的比较](./table1.png)
 
+## 两个版本
+
+PhotoBench 提供两个版本，以支持不同的研究方向：
+
+| | PhotoBench（完整版） | PhotoBench-Protected |
+|---|---|---|
+| **图片** | 原始照片（约 11 GB） | 不包含 |
+| **特征** | 使用自己的模型（CLIP、SigLIP 等） | 提供预计算的 caption 和 embedding |
+| **元数据** | 自行提取（EXIF、时间戳等） | 提供预计算的元数据 |
+| **侧重** | 无限制检索：embedding、caption 或 agent | 仅限 agent 规划能力 |
+| **榜单** | [PhotoBench 全量榜](https://huggingface.co/spaces/SorrowTea/PhotoBench/) | [PhotoBench-Protected 榜](https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/) |
+| **数据集** | [SorrowTea/PhotoBench](https://huggingface.co/datasets/SorrowTea/PhotoBench) | [SorrowTea/PhotoBench-Protected](https://huggingface.co/datasets/SorrowTea/PhotoBench-Protected) |
+
+- **PhotoBench（完整版）** — 面向希望使用自己的视觉编码器、caption 生成器或端到端 agent 流程的研究者。你拥有原始图片和完全的自由。
+- **PhotoBench-Protected** — 面向专注于 **agent 规划与推理** 的研究者。不提供原始图片，你只能使用预计算的 caption、embedding 和元数据。这将规划能力与视觉表征学习隔离开来。
+
 ## 数据集下载
 
 您可以直接从我们的 Gitee 仓库获取完整数据集：[https://gitee.com/sorrowtea/PhotoBench](https://gitee.com/sorrowtea/PhotoBench)

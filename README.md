@@ -28,6 +28,22 @@ To address the limitations of existing datasets, we introduce PhotoBench, which 
 
 ![Table 1: Comparison with other datasets](./table1.png)
 
+## Two Variants
+
+PhotoBench is released in two variants to support different research directions:
+
+| | PhotoBench (Full) | PhotoBench-Protected |
+|---|---|---|
+| **Images** | Raw original photos (~11 GB) | Not included |
+| **Features** | Use your own models (CLIP, SigLIP, etc.) | Pre-computed captions & embeddings provided |
+| **Metadata** | Extract your own (EXIF, timestamps, etc.) | Pre-computed metadata provided |
+| **Focus** | Unrestricted retrieval: embedding, caption, or agent | Agent planning only |
+| **Leaderboard** | [PhotoBench](https://huggingface.co/spaces/SorrowTea/PhotoBench/) | [PhotoBench-Protected](https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/) |
+| **Dataset** | [SorrowTea/PhotoBench](https://huggingface.co/datasets/SorrowTea/PhotoBench) | [SorrowTea/PhotoBench-Protected](https://huggingface.co/datasets/SorrowTea/PhotoBench-Protected) |
+
+- **PhotoBench (Full)** — For researchers who want to experiment with their own vision encoders, caption generators, or end-to-end agent pipelines. You get the raw images and complete freedom.
+- **PhotoBench-Protected** — For researchers focusing exclusively on **agent planning and reasoning**. No raw images are provided; you must work with pre-computed captions, embeddings, and metadata. This isolates the planning component from visual representation learning.
+
 ## Dataset Download
 
 You can get the complete dataset directly from our Gitee repository: [https://gitee.com/sorrowtea/PhotoBench](https://gitee.com/sorrowtea/PhotoBench)
