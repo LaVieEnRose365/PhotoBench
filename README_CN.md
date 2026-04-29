@@ -7,7 +7,7 @@
   📦 <a href="https://huggingface.co/datasets/SorrowTea/PhotoBench"><strong>Dataset</strong></a> ·
   🏅 <a href="https://huggingface.co/spaces/SorrowTea/PhotoBench-Protected/"><strong>Protected Leaderboard</strong></a> ·
   📦 <a href="https://huggingface.co/datasets/SorrowTea/PhotoBench-Protected"><strong>Protected Dataset</strong></a> ·
-  🖼️ <a href="https://sbox.myoas.com/l/Be5be4053f6b43840"><strong>obox</strong></a> (pwd: Oppo2026) · <a href="https://drive.google.com/drive/folders/1IyAlRskgnXG6pJ7fYL5Ie0SFDKZ95-cI?usp=drive_link"><strong>Google Drive</strong></a>
+  Images: <a href="https://sbox.myoas.com/l/Be5be4053f6b43840"><strong>obox</strong></a> (pwd: Oppo2026) · Images: <a href="https://drive.google.com/drive/folders/1IyAlRskgnXG6pJ7fYL5Ie0SFDKZ95-cI?usp=drive_link"><strong>Google Drive</strong></a>
 </p>
 
 PhotoBench 是从真实个人相册构建的首个评测基准，旨在将范式从视觉匹配转变为个性化多源意图驱动的照片检索。本仓库提供数据集、评测工具与榜单入口。
