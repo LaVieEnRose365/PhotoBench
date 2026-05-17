@@ -13,8 +13,8 @@
 PhotoBench is the first benchmark constructed from authentic, personal albums, designed to shift the paradigm from visual matching to personalized multi-source intent-driven photo retrieval. This repository hosts the datasets, evaluation tools, and leaderboard interfaces.
 
 ## 🎉 What's New
-- **🎓 Paper Accepted to KDD 2026!** 
-  Our work has been accepted to the **KDD 2026 Datasets and Benchmarks Track**! We look forward to seeing you in Jeju Island, South Korea. *(2026-05-17)*
+- **🎓 Paper Accepted to KDD 2026!**  
+  Our work has been accepted to the **KDD 2026 Datasets and Benchmarks Track**! We look forward to seeing you in Jeju Island, South Korea. *(2026-05-17)*  
 
 - **📦 Full Dataset Release on HuggingFace!**  
   Building upon our initial Protected release (pre-computed captions, embeddings, and metadata for agent-based research), the **complete raw images** are now openly available—choose your own models, extract your own features, and retrieve without limits!  
